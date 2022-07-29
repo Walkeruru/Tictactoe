@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.contenedor{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 150px 150px;
+    /* border: 5px solid black */;
+    justify-content: center;
+    /* width: 600px; */
+    height: 450px;
+    text-align: center;
+    font-size: 72px;
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+.contenedor>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    font-size: 50px;
+}
+body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2em;
+    background: #FBEEC1;
+}
+.gamestart{
+    grid-row: 1/2;
+    grid-column: 1/4;
+    /* border: 5px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    column-gap: 4em;
+    align-items: center;
+    padding: 1em;
+    background-color: #659dbd;
+    box-shadow: 0px 5px 20px 0px grey;
+}
+.gamestart>button{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: none;
+    padding: 1em;
+    border-radius: 6px;
+    background: #DAAD86;
+    color: white;
+}
+#nombredos{
+    grid-column: 3/4;
+    width: 70%;
+    padding: 0.8em;
+    justify-self: end;
+    border-radius: 6px;
+    border-style: solid;
+}
+#nombre{
+    grid-column: 1/2;
+    width: 70%;
+    padding: 0.8em;
+    border-radius: 6px;
+    border-style: solid;
+}
+.contenedor .right{
+    border-right: none;
+}
+.contenedor .top{
+    border-top: none;
+}
+.contenedor .left{
+    border-left: none;
+}
+.contenedor .bot{
+    border-bottom: none;
+}
+.final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: 'Bebas Neue', cursive;
+}
+p{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
